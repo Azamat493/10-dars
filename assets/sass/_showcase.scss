@@ -190,24 +190,24 @@ color: #3dc47e;
 
 @media (max-width: 1200px) {
   .showcase_bottom {
-    grid-template-columns: 2fr 1fr; // левая часть шире
+    grid-template-columns: 2fr 1fr; 
     height: auto;
   }
 }
 
 @media (max-width: 1000px) {
   .showcase_bottom {
-    grid-template-columns: 100%; // в одну колонку
+    grid-template-columns: 100%; 
     width: 100%;
     height: auto;
   }
 
   .showcase_mountain {
-    border-radius: 8px 8px 0 0; // закругление сверху
+    border-radius: 8px 8px 0 0; 
   }
 
   .showcase_recomended {
-    border-radius: 0 0 8px 8px; // закругление снизу
+    border-radius: 0 0 8px 8px;
     margin-top: 20px;
   }
 }
@@ -245,7 +245,7 @@ color: #3dc47e;
 }
 @media (max-width: 600px) {
   .showcase_recomended {
-    grid-template-columns: 1fr; // карточки вниз
+    grid-template-columns: 1fr; 
     padding: 15px;
 
     &__title {
