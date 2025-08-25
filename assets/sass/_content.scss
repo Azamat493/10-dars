@@ -109,14 +109,14 @@
 }
 .sidebar {
   background: #fff;
-   width: 263px;
+  width: 263px;
   flex-shrink: 0;
   height: fit-content;
   border-radius: 12px;
   padding: 20px;
-   top: 0;
-    position: sticky;
-    z-index: 2;
+  top: 0;
+  position: sticky;
+  z-index: 2;
   h3 {
     font-weight: 900;
     font-size: 14px;
@@ -128,34 +128,33 @@
   }
 }
 .recomen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .tickets {
-    display: flex;
-    flex-direction: column;
-   
+  display: flex;
+  flex-direction: column;
 }
 .tickets-centre {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
 }
 .tickets-text h1 {
-font-weight: 400;
-font-size: 14px;
-line-height: 143%;
-color: #4b5157;
-margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #4b5157;
+  margin-bottom: 5px;
 }
 .tickets-text p {
-font-weight: 400;
-font-size: 12px;
-line-height: 125%;
-color: #939699;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+  color: #939699;
 }
 .divider {
   margin-top: 15px;
@@ -165,28 +164,26 @@ color: #939699;
 .content .container {
   max-width: 1350px;
   margin: 0 auto;
-  display: flex;    
-  gap: 20px;     
+  display: flex;
+  gap: 20px;
   align-items: flex-start;
 }
 @media (max-width: 1200px) {
- 
   .content {
     width: 100%;
     max-width: 100%;
-    margin: 0 auto;       
+    margin: 0 auto;
     padding: 20px 0;
-    display: block;       
+    display: block;
   }
 
-  
   .content .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     gap: 20px;
   }
 
@@ -194,16 +191,14 @@ color: #939699;
   .sidebar {
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto;       
+    margin: 0 auto;
   }
-
 
   .posts article {
     width: 100%;
     height: auto;
     margin: 0 auto;
   }
-
 
   .post1 {
     display: flex;
@@ -215,7 +210,6 @@ color: #939699;
     height: auto;
     margin-bottom: 15px;
   }
-
 
   .sidebar {
     position: static;
@@ -288,4 +282,9 @@ color: #939699;
     padding: 5px;
   }
 }
-.posts, .post1, .sidebar { margin-left: auto; margin-right: auto; }
+.posts,
+.post1,
+.sidebar {
+  margin-left: auto;
+  margin-right: auto;
+}

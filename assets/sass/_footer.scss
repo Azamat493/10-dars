@@ -1,0 +1,274 @@
+@use "./mixin" as *;
+@use "./variable" as *;
+
+footer {
+  background: #ffffff;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.subscribe {
+  text-align: center;
+  margin-bottom: 30px;
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: center;
+    color: #262d33;
+    margin-bottom: 20px;
+  }
+}
+
+.subscribe input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  border: none;
+  background: #4592ff;
+  color: #fff;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.footer-links h3 {
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 143%;
+  color: #262d33;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin: 5px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #4b5157;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social i {
+  margin-left: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.line_color1 {
+  background-color: red;
+  width: 16%;
+  height: 7px;
+}
+.line_color2 {
+  background-color: blueviolet;
+  width: 16%;
+  height: 7px;
+}
+.line_color3 {
+  background-color: blue;
+  width: 16%;
+  height: 7px;
+}
+.line_color4 {
+  background-color: orange;
+  width: 16%;
+  height: 7px;
+}
+.line_color5 {
+  background-color: green;
+  width: 16%;
+  height: 7px;
+}
+.line_color6 {
+  background-color: rgb(16, 89, 113);
+  width: 16%;
+  height: 7px;
+}
+.line_color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.contact_us {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  h1 {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #262d33;
+  }
+}
+.contact_us_left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer_svg {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: block;
+}
+.last_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: left;
+    color: #939699;
+  }
+}
+.web-sites a {
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.web-sites a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+@media (max-width: 1140px) {
+  .footer-links {
+    gap: 40px;
+  }
+  .subscribe h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .subscribe h2 {
+    font-size: 28px;
+  }
+
+  .subscribe input {
+    width: 200px;
+  }
+
+  .subscribe button {
+    padding: 8px 16px;
+  }
+
+  .contact_us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact_us_left {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .last_footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .footer-links {
+    gap: 15px;
+  }
+
+  .footer-links h3 {
+    font-size: 12px;
+  }
+
+  .footer-links li {
+    font-size: 12px;
+  }
+
+  .subscribe h2 {
+    font-size: 22px;
+  }
+
+  .subscribe input {
+    width: 150px;
+  }
+
+  .subscribe button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .line_color div {
+    width: 12%;
+    height: 5px;
+  }
+}
+@media (max-width: 300px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subscribe h2 {
+    font-size: 18px;
+  }
+
+  .subscribe input {
+    width: 120px;
+  }
+
+  .subscribe button {
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+
+  .line_color div {
+    width: 10%;
+    height: 4px;
+  }
+
+  .contact_us_left {
+    gap: 5px;
+  }
+
+  .last_footer {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
